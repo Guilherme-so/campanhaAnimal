@@ -1,0 +1,53 @@
+.hero {
+  width: 100%;
+  &:after {
+    content: "";
+    width: 100%;
+    height: calc(100% - 30%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: var(--orange-500);
+  }
+
+  .heroTitle {
+    text-align: center;
+    font-size: 34px;
+    padding: 9rem 0 3rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  video {
+    max-width: 95%;
+    height: 95% !important;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    &:after {
+      height: 40%;
+    }
+    .heroTitle {
+      font-size: 20px;
+
+      padding: 5rem 1px 3rem 0;
+    }
+  }
+}

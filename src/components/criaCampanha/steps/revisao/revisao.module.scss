@@ -1,0 +1,144 @@
+.form {
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .reviseTitle{
+        display: flex;
+        align-self: flex-start;
+        margin: 0 28px;
+        margin-bottom: 28px;
+        color: var(--gray-500)
+    }
+
+    .nomeDaCampanha{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .nomeCampanhaLabel {
+            max-width: 600px;
+            width: 90%;
+            display: flex;
+            margin: 0 28px;
+            align-self: flex-start;
+        }
+
+        input {
+            width: 90%;
+            display: flex;
+            margin: 0 20px;
+            margin-top: 1rem;
+            font-weight: normal;
+            padding: 10px 20px;
+            color: var(--gray-500);
+        }
+    }
+
+
+    .inputControllers{
+        // max-width: 600px;
+        width: 90%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        gap: 40px;
+
+        .meta{
+            display: flex;
+            flex-direction: column;
+
+            label {
+                display: flex;
+                margin-top: 1.5rem;
+                margin-bottom: .5rem;
+            }
+
+            input {
+                width: 100%;
+                flex: 1;
+                font-weight: normal;
+                padding: 10px 20px;
+                color: var(--gray-500);
+            }
+        }
+
+        .ong{
+            display: flex;
+            flex-direction: column;
+            
+            label {
+                display: flex;
+                margin-top: 1.5rem;
+                margin-bottom: .5rem;
+            }
+
+            
+            input {
+                width: 100%;
+                flex: 1;
+                font-weight: normal;
+                padding: 10px 20px;
+                color: var(--gray-500);
+            }
+
+        }
+    }
+
+    .controllersDetail{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        label {
+            max-width: 600px;
+            width: 90%;
+            display: flex;
+            margin: 0 30px;
+            align-self: flex-start;
+            margin-top: 2rem;
+        }
+
+        textarea {
+            background-color: var(--gray-300);
+            color: var(--gray-500);
+            width: 90%;
+            display: flex;
+            margin: 0 20px;
+            margin-top: 1rem;
+            font-weight: normal;
+            font-size: large;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+    }
+
+
+
+    .dadosBasicosNext{
+        background-color: var(--green-500);
+        color: #ffffff;
+        font-size: large;
+        margin-top: 4rem;
+        border: none;
+        padding: 10px 60px;
+        border-radius: 20px; 
+    }
+
+    .dadosBasicosNext:hover{
+        background-color: var(--green-800);
+    }
+
+
+
+}

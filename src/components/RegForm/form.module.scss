@@ -1,0 +1,32 @@
+.header {
+  h1 {
+    font-size: xx-large;
+  }
+
+  h3 {
+    font-size: large;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+}
+
+.progressbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    width: 700px;
+    height: 10px;
+    background-color: #C4C4C4;
+    margin-bottom: 50px;
+    border-radius: 10px;
+  }
+  
+  .progressbar div {
+    width: 33.3%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #99E7B7;
+  }
+  

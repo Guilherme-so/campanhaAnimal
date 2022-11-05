@@ -1,0 +1,24 @@
+.buttons {
+  position: fixed;
+  top: 70%;
+  right:  16px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    cursor: pointer;
+    margin-right: 40px;
+    width: 94px;
+    height: 94px;
+  }
+
+  @media (max-width: 768px) {
+    top: 80%;
+    img {
+      height: 50px;
+      width: 50px;
+      margin:0;
+    }
+  }
+}

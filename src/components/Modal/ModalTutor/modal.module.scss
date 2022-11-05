@@ -1,0 +1,197 @@
+//react-modal
+
+.myModal{
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	max-width: 700px; 
+	width: 100%;
+	max-height: 400px;
+	height: 100%;
+
+	.modalContainer{
+		display: flex;
+		flex-direction: column;
+		padding: 40px;
+
+		.btnCloseModal{
+			width: 30px;
+			height: 30px;
+			border: none;
+			background-color: #FFFFFF;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+
+		.processModal{
+			display: flex;
+			margin-top: 1rem;
+			margin-left: 70px;
+			gap: 140px;
+
+			.processItem {
+				
+				p {
+					font-size: small;
+					color: #595959;
+				} 
+			}
+
+			    
+			.selected {
+				padding: 10px;
+				margin: 0 18px;
+				border: none;
+				height: 40px;
+				width: 40px;
+				border-radius: 100%;
+				color: #fff;
+				background-color: var(--green-500);
+				cursor: pointer;
+				display: flex;
+				justify-content: center;
+				position: relative;
+		
+			
+				.circleEmoji {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				}
+			}
+			.selected::after {
+				content: " ";
+				position: absolute;
+				top: 20px;
+				// margin: 0 3px;
+				left: 40px;
+				display: inline-block;
+				height: 4px;
+				width: 176px;
+				background-color: var(--green-500);
+				color: var(--green-500);
+			}   
+
+			.processItem:last-child > div::after{
+				display: none;
+				background-color: red;
+				color: red;
+			} 
+		}
+	}
+
+	.modalWrapper{
+		display: flex;
+		gap: 30px;
+		justify-content: center;
+		align-items: center;
+
+		.modalImg{
+
+			img {
+				border-radius: 10px;
+			}
+		}
+
+		.description{
+			
+			h2 {
+				color: var(--orange-500);
+				margin-bottom: 10px;
+			}
+
+			p {
+				color: #595959;
+				font-size: small;
+			}
+
+			.subdesc{
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.overlay{
+	background: #515151;
+	position: fixed;
+}
+
+
+//calcelar adocao modaç
+
+.cancelAdoptionModel{
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	max-width: 450px; 
+	width: 100%;
+	max-height: 250px;
+	height: 100%;
+
+    .modalContainer{
+		display: flex;
+		flex-direction: column;
+		padding: 40px;
+
+		.btnCloseModal{
+			width: 30px;
+			height: 30px;
+			border: none;
+			background-color: #FFFFFF;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+	}
+}
+
+
+.cancelAdoption{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+
+    .sucessoCancel{
+        width: 50px;
+        height: 50px;
+        background-color: var(--green-500);
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        margin-bottom: 10px;
+    }
+
+    p {
+        text-align: center;
+        color: #595959;
+    }
+
+    button {
+        background-color: var(--green-500);
+        color: #FFFFFF;
+        margin-top: 2rem;
+        border: none;
+        padding: 10px 30px;
+        border-radius: 20px;
+    }
+}

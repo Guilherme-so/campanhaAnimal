@@ -1,0 +1,543 @@
+
+.paymentSection {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	flex-direction: column;
+
+	h1 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 49px;
+		text-align: center;
+
+		/* cinza escuro */
+
+		color: #515151;
+	}
+
+	span {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		/* identical to box height */
+
+		color: #595959;
+	}
+}
+
+.wrapperDebitoCredito{
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	gap: 10px;
+}
+
+
+.inputController {
+	max-width: 700px;
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputController span {
+display: flex;
+align-items: flex-start;
+margin-bottom: 8px;
+margin-top: 15px;
+}
+
+.inputCheckBox {
+	background-color: #F0F0F0;
+	color:  #F0F0F0;
+	border-radius: 10px;	
+}
+.debito input {
+	background-color: #F0F0F0;
+	color:  #F0F0F0;
+	border-radius: 10px;
+}
+
+.debito label {
+	color: #595959;
+	font-weight: 400;
+
+}
+
+.credito label {
+	color: #595959;
+	font-weight: 400;
+
+}
+
+//pix
+.pixContainer {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+	max-width: 700px;
+	width: 100%;	
+	// background-color: #FBFBFB;
+
+	.prHeading {
+		font-weight: normal;
+		color: #595959;
+		margin: 0 10px;
+		margin-top: 20px;
+	}
+
+	.pixInfo{
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		align-self: baseline;
+		padding: 20px;
+		justify-content: unset;
+		margin-top: 3rem;
+		// background-color: antiquewhite;
+		max-width: 400px;
+		width: 100%;
+		p{
+			color: #595959;
+			opacity: .9;
+		}
+
+		.pixInfoDetail1{
+			display: flex;
+			line-height: 20px;
+			gap: 20px;
+			// justify-content: space-between;
+		}
+		.pixInfoDetail2{
+			display: flex;
+			line-height: 20px;
+			gap: 45px;
+			// justify-content: space-between;
+		}
+		.pixInfoDetail3{
+			display: flex;
+			line-height: 20px;
+			gap: 37px;
+			// justify-content: space-between;
+		}
+	}
+
+	.pixComprovante{
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		align-self: baseline;
+		padding: 20px;
+		justify-content: unset;
+		margin-top: 3rem;
+
+		p {
+			color: #515151;
+			font-weight: 100;
+			opacity: .7;
+		}
+
+		.enviarComprovante{
+			display: flex;
+			align-items: center;
+			margin-top: 15px;
+
+			input {
+				display: flex;
+				max-width: 500px;
+				width: 100%;
+				background-color: #fff;
+				border-radius: 10px 0px 0px 10px;
+				height: 46px;
+				flex: 1;
+				color: #515151;
+				font-weight: 200;
+				opacity: .7;
+			}
+	
+			button {
+				border: none;
+				background-color: var(--green-500);
+				height: 50px;
+				width: 80px;
+				border-radius: 0px 10px 10px 0px;
+
+				&:hover{
+					background-color: var(--green-800);
+				}
+			}
+		}
+	}
+
+	.btnConcluir{
+		border: none; 
+		background-color: var(--green-500);
+		color: #ffffff;
+		padding: 10px 60px;
+		border-radius: 20px;
+		margin-top: 20px;
+
+		&:hover{
+			background-color: var(--green-800);
+		}
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.pixContainer {
+		h1 {
+			font-size: 25px;
+		}		
+		
+		
+	.prHeading {
+
+		margin-top: 0px;
+	}
+
+		.pixInfo {
+			margin-top: 2rem;
+
+			.pixInfoDetail3 {
+				display: flex;
+				flex-direction: column;
+				gap: 0;
+				justify-content: baseline;
+				align-self: baseline;
+				align-items: baseline;
+
+				span {
+				word-break: break-all;
+				}
+			}
+		}
+		.pixComprovante {
+			margin-top: 2rem;
+		}
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.pixContainer {
+
+		.pixInfo {
+			.pixInfoDetail1 {
+				display: flex;
+				flex-direction: column;
+				gap: 0;
+				justify-content: baseline;
+				align-self: baseline;
+				align-items: baseline;
+
+				span {
+				word-break: break-all;
+				margin-bottom: 5px;
+				}
+			}
+
+			.pixInfoDetail2 {
+				display: flex;
+				flex-direction: column;
+				gap: 0;
+				justify-content: baseline;
+				align-self: baseline;
+				align-items: baseline;
+
+				span {
+				word-break: break-all;
+				margin-bottom: 5px;
+				}
+			}
+		}
+
+	}
+}
+
+
+//boleto
+
+.boletoContainer {
+
+	p {
+		margin-bottom: 4rem;
+		color: #595959;
+		font-weight: normal;
+		font-size: large;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.boletoContainer {
+		padding: 20px;
+
+		h1 {
+			font-size: 25px;
+			line-height: 28px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin-bottom: 1rem;
+		}
+	}
+
+}
+
+
+.form {
+    max-width: 600px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .nomeCompleto{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+		margin-top: 1.5rem;
+
+
+        .nomeCampletoLabel {
+            max-width: 600px;
+            width: 90%;
+            display: flex;
+            margin: 0 28px;
+            align-self: flex-start;
+        }
+
+        input {
+            width: 90%;
+            display: flex;
+            margin: 0 20px;
+            margin-top: 1rem;
+            font-weight: normal;
+            padding: 10px 20px;
+            color: var(--gray-500);
+        }
+    }
+
+
+    .inputControllers{
+        // max-width: 600px;
+        width: 90%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        gap: 40px;
+
+        .meta{
+            display: flex;
+            flex-direction: column;
+
+            label {
+                display: flex;
+                margin-top: 1.5rem;
+                margin-bottom: .5rem;
+            }
+
+            input {
+                width: 100%;
+                flex: 1;
+                font-weight: normal;
+                padding: 10px 20px;
+                color: var(--gray-500);
+            }
+        }
+
+        .ong{
+            display: flex;
+            flex-direction: column;
+            
+            label {
+                display: flex;
+                margin-top: 1.5rem;
+                margin-bottom: .5rem;
+            }
+
+            
+            input {
+                width: 100%;
+                flex: 1;
+                font-weight: normal;
+                padding: 10px 20px;
+                color: var(--gray-500);
+            }
+
+        }
+    }
+
+    .dadosBasicosNext{
+        background-color: var(--green-500);
+        color: #ffffff;
+        font-size: large;
+        margin-top: 4rem;
+        border: none;
+        padding: 10px 60px;
+        border-radius: 20px; 
+    }
+
+    .dadosBasicosNext:hover{
+        background-color: var(--green-800);
+    }
+
+}
+
+
+//card
+.paymentCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 70px;
+	max-width: 751px;
+	width: 100%;
+	
+.paymentInfo {
+	background-color: #FBFBFB;
+	display: flex;
+	width: 90%;
+	padding: 19px 22px;
+	align-items: center;
+	border: 1px solid #c5c5c5;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+}
+
+
+.editAndDelete {
+	display: flex;
+	// flex-direction: column;
+}
+
+.editButton {
+	margin-right: 22px;
+	background: transparent;
+	border: none;
+}
+
+.deleteButton {
+	background: transparent;
+	border: none;
+	
+}
+
+
+
+
+// modal
+
+.modal {
+	display: none;
+	position: absolute;
+	width: 100vw;
+	height: 1000vh;
+	background: rgba(26, 26, 26, 0.9);
+    position: absolute;
+    left: 50%; 
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+
+	&.active {
+		display: flex;
+		margin: auto;
+		justify-content: center;
+		align-items: center;
+		z-index: 5;
+		overflow: hidden;
+	}
+
+	.modalContent {
+		border-radius: 30px;
+		background: #fff;
+		padding: 2rem;
+		max-height: 100vh;
+		width: 600px;
+		height: 300px;
+		overflow: hidden;
+
+		-webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)both;
+		animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+		
+        .modalHeader {
+			display: flex;
+
+			h4 {
+				margin-left: auto;
+				text-transform: uppercase;
+			}
+			#closeButton {
+				margin-left: auto;
+				cursor: pointer;
+				font-weight: bold;
+			}
+		}
+		h4 {
+			color: var(--orange-500);
+		}
+
+		.concluirPayment{
+			display: flex;
+			flex-direction: column;
+			margin: 2rem auto;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.concluirPayment button {
+			background-color: var(--green-500);
+			margin-top: 3rem;
+			border: none;
+			border-radius: 20px;
+			padding: 10px 40px;
+			color: #fff;
+		}
+
+		.pagamentoConcluido {
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.pagamentoConcluido h2 {
+			margin: 1rem 0 2rem 0;
+		}
+
+		.pagamentoConcluido button {
+			background-color: var(--green-500);
+			border: none;
+			border-radius: 20px;
+			padding: 10px 40px;
+			color: #fff;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 500px) {
+	.editAndDelete {
+		display: flex;
+		margin: auto;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+}

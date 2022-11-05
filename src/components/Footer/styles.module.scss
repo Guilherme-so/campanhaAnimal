@@ -1,0 +1,144 @@
+.footer {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .dogAside{
+	position: absolute;
+	top: 0;
+	right: 0;
+  }
+
+  .footerWrapper {
+	z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8rem 10rem 3rem 10rem;
+
+    .aboutUs {
+		display: flex;
+		flex-direction: column;
+		align-self: start;
+
+		p{
+			margin-top: 1rem;
+			color: #595959;
+			font-weight: 100;
+			margin-bottom: 5px;
+		}
+      
+    }
+
+	.redesSociais{
+		display: flex;
+		flex-direction: column;
+		align-self: start;
+
+		h2{
+			font-size: xx-large;
+			margin-bottom: .5rem;
+		}
+
+		p{
+			color: #595959;
+			font-weight: 100;
+			margin-bottom: 5px;
+		}
+
+		.insta{
+			margin-right: 10px;
+		}
+	}
+
+	.contact{
+		display: flex;
+		flex-direction: column;
+		align-self: start;
+
+		h2{
+			font-size: xx-large;
+			margin-bottom: .5rem;
+		}
+
+		p{
+			color: #595959;
+			font-weight: 100;
+			margin-bottom: 10px;
+		}
+	}
+  }
+
+  .politicAndTerms{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	p{
+		color: #595959;
+		font-weight: 100;
+		margin-bottom: 20px;
+	}
+  }
+}
+
+@media screen and (min-width: 499px) and (max-width: 979px) {
+  .footer {
+    gap: 1.5rem;
+
+    .footerCategory {
+      max-width: 100%;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    img {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .footer {
+    background-image: url("/assets/images/dog-small.png");
+
+    background-position: bottom right;
+    grid-template-columns: 50vw;
+    grid-template-areas: "left right" "politic politic";
+    padding: 3rem 1rem;
+    font-size: 14px;
+    gap: 1.5rem;
+    img {
+      max-width: 100%;
+    }
+
+    #contact {
+      display: flex;
+      all: unset;
+      position: relative;
+      bottom: 100px;
+    }
+
+    .footerCategory {
+      margin-top: 3rem;
+
+      img {
+        width: 29px;
+        height: 26px;
+        margin: 0.5rem;
+      }
+    }
+
+    #politicAndTerms {
+      justify-self: center;
+      grid-area: politic;
+      text-align: center;
+      grid-column: 1 / 3;
+      grid-row: 3;
+    }
+  }
+}

@@ -1,0 +1,454 @@
+.headerDetail {
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.headerDetail p {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 5rem;
+}
+
+.feedApadrinhamento {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--green-500);
+    transition: filter 0.4s ease;
+}
+
+.detailWrapper {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  gap: 30px;
+
+  .thumbnailImg {
+    width: 600px;
+    height: 400px;
+    border: 5px solid #ff9d71;
+    border-radius: 40px;
+  }
+
+  .tyneImages {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.singleDogDetail {
+  h1 {
+    color: #ff9d71;
+    margin-bottom: 1rem;
+  }
+
+  .ongAndLocation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: medium;
+    color: #595959;
+    margin-bottom: 1rem;
+
+    .ong {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ong img {
+      border-radius: 100%;
+      border: 3px solid #ff9d71;
+    }
+  }
+
+  .detailPs {
+    color: #595959;
+
+    .total {
+      color: #ff9d71;
+    }
+
+    .buttonApadrinhar {
+      background-color: var(--green-500);
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      padding: 15px 40px;
+    }
+
+    .buttonApadrinhar:hover {
+      background-color: #50B577;
+    }
+  }
+}
+
+.containerButtonsPrice {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  gap: 20px;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.buttonPrice {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 5px 15px 5px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);;
+}
+
+.selected {
+    background-color: #99e7b7;
+}
+
+.containerInputOutrosAndApadrinhar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 1rem;
+    
+    .inputOutros {
+        display: inline-block;
+        border: none;
+        background-color: #ffffff;
+        color: #ff9d71;
+        border-bottom: 2px solid #515151;
+        border-radius: 0%;
+        margin-bottom: 1rem;
+    }
+
+    .apadrinheModalButton{
+      background-color: #99e7b7;
+      color: #ffffff;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 40px;
+    }
+
+    .apadrinheModalButton:hover {
+      background-color: #50B577;
+    }
+}
+
+.carouselWrapper {
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  margin-top: 6rem;
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+}
+
+.carrosselContent {
+  max-width: 75vw;
+  position: relative;
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .buttonsLeft {
+    position: absolute;
+    top: 40%;
+    left: -55px;
+    border: none;
+    background-color: #ffffff;
+    
+    .imgLeft{
+      background-color: #ffffff;
+      border: none; 
+    }
+
+  }
+
+  .buttonsRight {
+    position: absolute;
+    top: 40%;
+    right: -65px;
+    border: none;
+    background-color: #ffffff;
+
+
+    .imgRight {
+      background-color: #ffffff;
+      border: none;
+
+    }
+   }
+}
+
+//Custom Input Radio
+.ajudeContainer {
+  display: flex;
+  margin:auto ;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  .customRadio{
+    display: flex;
+    gap: 10px;
+  }
+
+  .customRadio input{
+    display: none;
+  }
+
+  .customRadio input + label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #E1E1E1;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+
+  .customRadio input:checked + label::before{
+    background-color: #99e7b7;
+    box-sizing: border-box;
+    border: 3px solid #E1E1E1;
+    padding: 1px;
+  }
+
+}
+
+
+.animalSolo {
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 20px;
+  position: relative;
+  margin: 10px;
+  // width: ;
+  flex: none;
+
+  .dog {
+    object-fit: cover;
+  }
+
+  .onwer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    left: 50px;
+  }
+
+  .onwer img {
+    border-radius: 100%;
+    border: 5px solid #ff9d71;
+    position: absolute;
+    left: -40px;
+  }
+
+  .onwer p {
+    background-color: #ff9d71;
+    padding: 10px 20px;
+    color: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .animalDetail {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .animalDetail h2 {
+    color: #ff9d71;
+    margin: 15px 0 5px 0;
+  }
+
+  .animalDetail p {
+    color: #595959;
+  }
+
+  .animalDetail button {
+    background-color: #99e7b7;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 50px;
+    margin: 10px 0 20px 0;
+  }
+
+
+  .animalDetail button:hover {
+    background-color: #50B577;
+  }
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+  .detailWrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagesContainer{
+    display: flex;
+    margin: auto;
+    flex-direction:row-reverse;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    .thumbnailImg{
+      width: 600px;
+      height: 500px;
+      border-radius: 50px;
+      border: 15px solid #ff9d71;
+    }
+  }
+
+  .tyneImages {
+    display: flex;
+    flex-direction: column;   
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .detailWrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagesContainer{
+
+    .thumbnailImg{
+      width: 400px;
+      height: 300px;
+      border-radius: 50px;
+      border: 15px solid #ff9d71;
+    }
+  }
+
+  .tyneImages {
+    display: flex;
+    flex-direction: column;   
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .detailWrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagesContainer{
+
+    .thumbnailImg{
+      width: 300px;
+      height: 200px;
+      border-radius: 30px;
+      border: 10px solid #ff9d71;
+    }
+  }
+
+  .tyneImages {
+    display: flex;
+    flex-direction: column;   
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+  .animalSolo {
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 20px;
+  max-width: 250px;
+  overflow: hidden;
+  max-height: 500px;
+  position: relative;
+  margin: 10px;
+  flex: none;
+}
+
+.carouselWrapper {
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  margin-top: 6rem;
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+}
+
+.carrosselContent {
+  max-width: 75vw;
+  position: relative;
+
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+  }
+
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .buttonsLeft {
+    display: none;
+
+    position: absolute;
+    bottom: -350px;
+    // top: 0;
+    // left: -55px;
+    border: none;
+    background-color: #ffffff;
+    
+    .imgLeft{
+      background-color: #ffffff;
+      border: none; 
+    }
+
+  }
+
+  .buttonsRight {
+    display: none;
+    position: absolute;
+    bottom: -350px;
+    // top: 0;
+    right: 0;
+    border: none;
+    background-color: #ffffff;
+
+
+    .imgRight {
+      background-color: #ffffff;
+      border: none;
+
+    }
+   }
+}
+
+}

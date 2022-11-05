@@ -1,0 +1,132 @@
+.dogBox {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  max-width: 310px;
+  height: 518px;
+  display: inline-block;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.2s ease-in;
+  gap: 1rem;
+  margin-right: 1rem;
+  &:hover {
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.25);
+  }
+  .dogBoxHeader {
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+
+    img {
+      border-radius: 10px 10px 0px 0px;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    .dataDog {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      display: flex;
+      align-items: center;
+      font-size: 1.4vh;
+      border-radius: 10px;
+      width: 100%;
+      .dataDogTitle {
+        z-index: 1;
+        img {
+          border: 3px solid var(--orange-500);
+          border-radius: 100%;
+          height: 35px;
+        }
+      }
+      .dataDogContent {
+        background-color: var(--orange-500);
+        padding: 4.2px 1.5rem;
+        position: absolute;
+        left: 20px;
+        height: 62%;
+        max-width: 100%;
+        border-radius: 10px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .dogBoxContent {
+    text-align: center;
+    padding: 1rem;
+    p {
+      color: var(--gray-500);
+      font-weight: 300;
+      font-size: 18px;
+    }
+    h3 {
+      color: var(--orange-500);
+      font-size: 25px;
+    }
+    #content {
+      min-height: 120px;
+      max-height: 200px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: pre-wrap;
+      max-width: 80%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 949px) {
+  .dogBox {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 502px) {
+  .dogBox {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dogBox {
+    min-width: 47.5%;
+    max-width: 240px;
+    margin-left: 3px;
+    height: auto;
+
+    .dogBoxHeader {
+      img {
+        border-radius: 10px 10px 0px 0px;
+        max-width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .dogBoxContent {
+      h3 {
+        font-size: 22px !important;
+        line-height: 27px;
+      }
+
+      p {
+        font-weight: 500;
+        margin-bottom: 1rem;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .dogBox {
+    max-width: 100% !important;
+    margin-right: 0 !important;
+  }
+}

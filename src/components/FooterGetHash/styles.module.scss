@@ -1,0 +1,37 @@
+.gethashFooter {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background: #E9E9E9;
+	color: #595959;
+	padding: 10px;
+	// margin-top: 25px;
+
+	p {
+		color: #595959;
+		font-weight: 100;
+	}
+}
+
+.developedBy {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.developedBy p {
+	margin-right: 30px;
+	color: #595959;
+	font-weight: 100;
+}
+
+@media (max-width: 632px) {
+	.gethashFooter {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+}

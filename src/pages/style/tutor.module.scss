@@ -1,0 +1,1138 @@
+//react-modal
+
+.myModal{
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	max-width: 700px; 
+	width: 100%;
+	max-height: 400px;
+	height: 100%;
+
+	.modalContainer{
+		display: flex;
+		flex-direction: column;
+		padding: 40px;
+
+		.btnCloseModal{
+			width: 30px;
+			height: 30px;
+			border: none;
+			background-color: #FFFFFF;
+			position: absolute;
+			top: 20px;
+			right: 20px;
+		}
+
+		.processModal{
+			display: flex;
+			margin-top: 1rem;
+			margin-left: 70px;
+			gap: 140px;
+
+			.processItem {
+				
+				p {
+					font-size: small;
+					color: #595959;
+				} 
+			}
+
+			    
+			.selected {
+				padding: 10px;
+				margin: 0 18px;
+				border: none;
+				height: 40px;
+				width: 40px;
+				border-radius: 100%;
+				color: #fff;
+				background-color: var(--green-500);
+				cursor: pointer;
+				display: flex;
+				justify-content: center;
+				position: relative;
+		
+			
+				.circleEmoji {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				}
+			}
+			.selected::after {
+				content: " ";
+				position: absolute;
+				top: 20px;
+				// margin: 0 3px;
+				left: 40px;
+				display: inline-block;
+				height: 4px;
+				width: 176px;
+				background-color: var(--green-500);
+				color: var(--green-500);
+			}   
+
+			.processItem:last-child > div::after{
+				display: none;
+				background-color: red;
+				color: red;
+			} 
+		}
+	}
+
+	.modalWrapper{
+		display: flex;
+		gap: 30px;
+		justify-content: center;
+		align-items: center;
+
+		.modalImg{
+
+			img {
+				border-radius: 10px;
+			}
+		}
+
+		.description{
+			
+			h2 {
+				color: var(--orange-500);
+				margin-bottom: 10px;
+			}
+
+			p {
+				color: #595959;
+				font-size: small;
+			}
+
+			.subdesc{
+				margin-top: 10px;
+			}
+		}
+	}
+}
+
+.overlay{
+	background: #515151;
+	position: fixed;
+}
+
+
+
+
+.container {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	width: 100%;
+	height: 300px;
+	filter: brightness(80%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: saturation;
+
+	button {
+		width: 70px;
+		height: 70px;
+		background: transparent;
+		border: none;
+		margin-right: 200px;
+	}
+}
+
+.mainContent {
+	padding-left: 62px;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 1px 4px 10px rgba(1, 13, 54, 0.25);
+	padding-bottom: 45px;
+}
+
+// .tutorImageT {
+// 	width: 270px;
+// 	height: 297px;
+// 	overflow: hidden;
+// 	border-radius: 20px;
+// 	border: 5px solid #ff9d71;
+// 	position: relative;
+// 	bottom: 70px;
+
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+
+// 	img {
+// 		width: 270px;
+// 		height: 297px;
+// 	}
+// }
+
+.tutorImageT {
+	width: 270px;
+	height: 297px;
+	border-radius: 20px;
+	display: flex;
+	border: 5px solid #ff9d71;
+	position: relative;
+	bottom: 70px;
+
+	background-image: url('https://images.unsplash.com/photo-1534180477871-5d6cc81f3920?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.userInfo {
+	display: flex;
+	flex-direction: column;
+	margin-left: 23px;
+	h1 {
+		margin-top: 30px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 49px;
+		margin-bottom: 8px;
+		/* cinza escuro */
+
+		color: #515151;
+	}
+
+	span {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		max-width: 800px;
+		color: #595959;
+	}
+}
+
+.location {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 39px;
+	margin-bottom: 22px;
+	span {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		margin-left: 9px;
+		/* identical to box height */
+
+		/* cinza escuro */
+
+		color: #515151;
+	}
+}
+
+.contactData {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	span {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		margin-left: 9px;
+		margin-right: 96px;
+		/* identical to box height */
+
+		/* cinza escuro */
+
+		color: #515151;
+	}
+}
+
+.contact {
+	display: flex;
+	flex-direction: row;
+
+	span {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		/* identical to box height */
+
+		/* cinza escuro */
+
+		color: #515151;
+	}
+}
+
+.selectedButtonContainer {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+
+	button {
+		background: transparent;
+		border: none;
+		color: #515151;
+		margin: 0 30px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 43px;
+		text-align: center;
+	}
+
+	.activeButton {
+		color: #99e7b7;
+		border-bottom: 3px solid #99e7b7;
+	}
+}
+
+.handleSelectUserContent {
+	margin-top: 100px;
+}
+
+.generalCard {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+}
+
+.cardData {
+	width: 100%;
+	height: 100%;
+	max-width: 645px;
+	max-height: 261px;
+	background: #59af7a;
+	border-radius: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 50px 113px 56px 113px;
+	margin: 24px;
+
+	h1 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 80px;
+		line-height: 98px;
+		text-align: center;
+		color: #ffffff;
+	}
+
+	span {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 49px;
+		text-align: center;
+		color: #ffffff;
+	}
+}
+
+.historyCardWrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 80px;
+}
+
+.historyCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 100%;
+}
+
+.historyCardSelect {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	width: 100%;
+	select {
+		width: 420px;
+	}
+	padding-right: 100px;
+}
+
+.historyCardSelectData {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+
+.historyCardData {
+	background: #ffffff;
+	border: 3px solid #f2f2f2;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	margin-top: 70px;
+	justify-content: space-between;
+	border-radius: 20px;
+	overflow: hidden;
+	max-width: 1095px;
+	width: 100%;
+
+	.cardButtonsWrapper {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+
+		.title{
+			color: var(--orange-500);
+		}
+	}
+
+	.imgHistory  {
+		max-width: 500px;
+		width: 100%;
+		height: 300px;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+
+}
+
+
+
+.historyCardButtons {
+	display: flex;
+
+	align-items: center;
+	justify-content: center;
+	button {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 173px;
+		max-width: 170px;
+		background: #ffffff;
+		border: 1px solid #f2f2f2;
+		box-shadow: 4px 4px 4px rgba(5, 15, 43, 0.25);
+		border-radius: 31px;
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 27px;
+		text-align: center;
+		margin-right: 20px;
+		color: #99e7b7;
+		padding: 10px 17px;
+	}
+
+	.completed {
+		width: 100%;
+		height: 224px;
+		max-width: 262px;
+		color: #ff9d71;
+
+		a {
+			margin-top: 10px;
+			padding: 8px 34px;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 17px;
+			text-align: center;
+			text-decoration: none;
+			color: #ffffff;
+			background: #99e7b7;
+			box-shadow: 2px 3px 5px rgba(185, 185, 184, 0.45);
+			border-radius: 50px;
+		}
+	}
+}
+
+#seeMore {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: var(--orange-500);
+	margin: 1rem 0 1rem 0;
+	gap: 10px;
+	cursor: pointer;
+	transition: filter 0.4s ease;
+	&:hover {
+		filter: brightness(0.8);
+	}
+}
+
+.acountDetailsCard {
+	display: grid;
+	grid-template-columns: 372px 1fr;
+	margin: 2rem 30px;
+	padding-top: 51px;
+	background: #ffffff;
+	box-shadow: 1px 4px 10px rgba(1, 13, 54, 0.25);
+	border-radius: 35px;
+	padding-right: 92px;
+	min-height: 1197px;
+}
+
+.asideTabs {
+	display: flex;
+	flex-direction: column;
+	button {
+		max-width: 346px;
+		width: 100%;
+		height: 65px;
+		background: transparent;
+		border: none;
+		font-size: 15px;
+		text-align: center;
+		color: #515151;
+	}
+	.acountDetailsActive {
+		background: #99e7b7;
+		color: #ffffff;
+		width: 346px;
+		height: 65px;
+	}
+}
+
+.userImageContainer {
+	max-width: 175px;
+	max-height: 163px;
+	overflow: hidden;
+	border-radius: 20px;
+	border: 5px solid #ff9d71;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.userInfoCard {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.inputsContainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1000px;
+	padding: 0 30px;
+}
+
+.saveButton {
+	padding: 15px 35px;
+	background: #99e7b7;
+	border-radius: 30px;
+	border: none;
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	color: #ffffff;
+	margin-bottom: 43px;
+	margin-top: 39px;
+}
+
+.resetPassContainer {
+	display: flex;
+	width: 100%;
+	background: #ffffff;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 92px;
+
+	form {
+		width: 100%;
+	}
+	h1 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 49px;
+		text-align: center;
+
+		/* cinza escuro */
+
+		color: #515151;
+	}
+}
+
+.resetPassInputContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.resetPassInputWrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: flex;
+	input {
+		width: 100%;
+		// max-width: 751px;
+		height: 60px;
+		background: #fbfbfb;
+		border: 1px solid #c5c5c5;
+		border-radius: 8px;
+	}
+	span {
+		margin-bottom: 10px;
+		margin-top: 10px;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 22px;
+		/* identical to box height */
+
+		color: #595959;
+	}
+}
+
+// width: 754px;
+
+@media (max-width: 1231px) {
+	.acountDetailsCard {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		margin: 16px;
+		padding-right: 0;
+	}
+
+	.inputWrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.cardData {
+		h1 {
+			font-size: 50px;
+		}
+		span {
+			font-size: 30px;
+		}
+	}
+
+	.historyCardWrapper {
+		padding: 0 10px;
+	}
+
+	.historyCardContent {
+		margin-top: 10px;
+	}
+
+	.historyCardSelect {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		width: 100%;
+		select {
+			width: 220px;
+		}
+		padding-right: 0;
+	}
+
+	.notificationContainer {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.historyCardData {
+		flex-direction: column;
+		// padding-bottom: 15px;
+	}
+
+	.inputsContainer {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.asideTabs {
+		button {
+			width: 272px;
+			height: 65px;
+			align-items: center;
+			justify-content: center;
+			background: transparent;
+			border: none;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 30px;
+		}
+		.acountDetailsActive {
+			background: #99e7b7;
+			color: #ffffff;
+		}
+	}
+
+	.resetPassContainer {
+		padding: 20px;
+	}
+
+	.selectedButtonContainer {
+		flex-wrap: wrap;
+		button {
+			font-size: 16px;
+		}
+	}
+}
+
+.paymentSection {
+	width: 100%;
+	display: flex;
+	align-items: center;
+
+	flex-direction: column;
+
+	h1 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 49px;
+		text-align: center;
+
+		/* cinza escuro */
+
+		color: #515151;
+	}
+
+	span {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		/* identical to box height */
+
+		color: #595959;
+	}
+}
+
+.wrapperDebitoCredito{
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	gap: 10px;
+}
+
+.inputCheckBox {
+	background-color: #F0F0F0;
+	color:  #F0F0F0;
+	border-radius: 10px;	
+}
+.debito input {
+	background-color: #F0F0F0;
+	color:  #F0F0F0;
+	border-radius: 10px;
+}
+
+.debito label {
+	color: #595959;
+	font-weight: 400;
+
+}
+
+.credito label {
+	color: #595959;
+	font-weight: 400;
+
+}
+
+
+.paymentCard {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+
+	max-width: 751px;
+	width: 100%;
+	border: 1px solid #c5c5c5;
+	padding: 19px 22px;
+	border-radius: 8px;
+	margin-top: 70px;
+}
+
+.paymentInfo {
+	display: flex;
+	flex-direction: row;
+}
+
+.editButton {
+	margin-right: 22px;
+	background: transparent;
+	border: none;
+}
+
+.deleteButton {
+	background: transparent;
+	border: none;
+}
+
+.inputWrapper {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 32px;
+}
+
+.Input {
+	display: flex;
+	flex-direction: column;
+
+	input {
+		width: 339px;
+		height: 60px;
+	}
+}
+
+.textarea {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	textarea {
+		font-size: 20px;
+		width: 100%;
+		height: 213px;
+		background: #fbfbfb;
+		border: 1px solid #c5c5c5;
+		border-radius: 8px;
+		margin-top: 14px;
+		resize: none;
+	}
+}
+
+.notificationContainer {
+	width: 100%;
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #ffffff;
+	box-shadow: 1px 4px 10px rgba(1, 13, 54, 0.25);
+	border-radius: 20px;
+	margin-left: 172px;
+	margin-right: 172px;
+	margin-top: 97px;
+	position: relative;
+
+	.sino {
+		display: flex;
+		position: absolute;
+		top: 20px;
+		right: 50px;
+	}
+
+	h1 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 49px;
+		text-align: center;
+
+		/* cinza escuro */
+
+		color: #515151;
+	}
+}
+
+.cardUserInfo {
+	img {
+		border-radius: 50%;
+		border: 3px solid #ff9d71;
+	}
+}
+
+.notificationData {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 13px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	background: #ffffff;
+	border: 1px solid #c5c5c5;
+	/* busca */
+	width: 100%;
+	max-width: 758px;
+	box-shadow: 0px 2px 6px rgba(19, 46, 80, 0.18);
+	border-radius: 20px;
+
+	button {
+		background: transparent;
+		border: none;
+		font-size: 0;
+	}
+}
+
+.notificationUserAndNotification {
+	display: flex;
+	align-items: center;
+	span {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+		margin-left: 20px;
+		color: #595959;
+	}
+}
+
+.bellIcon {
+	display: flex;
+	position: relative;
+	bottom: 50px;
+	left: 600px;
+}
+
+// .bellIcon {
+// 	display: flex;
+// 	position: relative;
+// 	bottom: 50px;
+// 	left: 600px;
+// }
+
+// .formWrapper {
+// 	display: flex;
+// 	padding: 0 30px;
+// 	flex-direction: column;
+// }
+
+// .inputWrapper {
+// 	display: flex;
+// 	flex-direction: column;
+// 	margin-top: 14px;
+// 	align-items: flex-start;
+// 	justify-content: flex-start;
+// 	width: 100% !important;
+// }
+
+@media (max-width: 1231px) {
+	.acountDetailsCard {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		margin: 16px;
+		padding-right: 0;
+	}
+
+	.inputWrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.cardData {
+		h1 {
+			font-size: 50px;
+		}
+		span {
+			font-size: 30px;
+		}
+	}
+
+	.historyCardWrapper {
+		padding: 0 10px;
+	}
+
+	.historyCardContent {
+		margin-top: 10px;
+	}
+
+	.historyCardSelect {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: center;
+		width: 100%;
+		select {
+			width: 220px;
+		}
+		padding-right: 0;
+	}
+
+	.notificationContainer {
+		margin: 0;
+		margin-top: 20px;
+		margin: 0 10px;
+		padding: 0 9px;
+
+		h1 {
+			font-size: 30px;
+		}
+	}
+
+	.notificationData {
+		margin-bottom: 13px;
+	}
+
+	.historyCardData {
+		flex-direction: column;
+		// padding-bottom: 15px;
+	}
+
+	.inputsContainer {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.asideTabs {
+		button {
+			width: 272px;
+			height: 65px;
+			align-items: center;
+			justify-content: center;
+			background: transparent;
+			border: none;
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 600;
+			font-size: 25px;
+			line-height: 30px;
+		}
+		.acountDetailsActive {
+			background: #99e7b7;
+			color: #ffffff;
+		}
+	}
+
+	.resetPassContainer {
+		padding: 20px;
+	}
+
+	.selectedButtonContainer {
+		flex-wrap: wrap;
+		button {
+			font-size: 16px;
+		}
+	}
+
+	.tutorImageT {
+		display: none;
+	}
+	.mainContent {
+		padding-left: 0;
+	}
+
+	.userInfo {
+		max-width: 300px;
+	}
+
+	.tutorLocation,
+	.contact {
+		display: flex;
+		flex-direction: column;
+
+		max-width: 300px;
+	}
+}
+
+
+//Custom Input Radio
+.ajudeContainer {
+    display: flex;
+    margin:auto ;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  
+    .customRadio{
+      display: flex;
+      gap: 10px;
+    }
+  
+    .customRadio input{
+      display: none;
+    }
+  
+    .customRadio input + label::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #E1E1E1;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      margin-bottom: 3px;
+    }
+  
+    .customRadio input:checked + label::before{
+      background-color: #99e7b7;
+      box-sizing: border-box;
+      border: 3px solid #E1E1E1;
+      padding: 1px;
+    }
+  
+  }
+  

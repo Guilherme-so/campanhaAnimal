@@ -1,0 +1,145 @@
+.aboutWrapper {
+  width: 700px;
+  display: flex;
+  margin: auto;
+  gap: 20px;
+}
+
+.animalImage{
+  border: none;
+  border-radius: 15px 15px 15px 15px;
+  border: 5px solid #FF9D71;
+}
+
+// .animalImgDiv {
+//   // border: 5px solid #FF9D71;
+//   // border-radius: 18px 18px 25px 25px;
+
+// }
+
+.about h1 {
+  color: #ff9d71;
+  display: flex;
+  justify-content: baseline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #595959;
+  width: 400px;
+  display: flex;
+  text-align: start;
+}
+
+.buttonNext {
+  color: #ffffff;
+  margin-top: 5rem;
+  padding: 15px 70px;
+  background-color: var(--green-500);
+  border: none;
+  border-radius: 20px;
+}
+
+.buttonNext:hover {
+  background-color: var(--green-800);
+}
+
+//Custom Input Radio
+.ajudeContainer {
+  display: flex;
+  margin: auto;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  .customRadio {
+    display: flex;
+    gap: 10px;
+  }
+
+  .customRadio input {
+    display: none;
+  }
+
+  .customRadio input + label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+  }
+
+  .customRadio input:checked + label::before {
+    background-color: #99e7b7;
+    box-sizing: border-box;
+    border: 3px solid #e1e1e1;
+    padding: 1px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .ajudeContainer {
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }  
+
+  .aboutWrapper {
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .about h1{
+    color: #FF9D71;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.about p {
+    color: #595959;
+    max-width: 600px;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.buttonNext {
+    color: #ffffff;
+    margin-top: 5rem;
+    padding: 15px 70px;
+    background-color: var(--green-500);
+    border: none;
+    border-radius: 20px;
+}
+
+.buttonNext:hover {
+    background-color: var(--green-800);
+}
+
+}

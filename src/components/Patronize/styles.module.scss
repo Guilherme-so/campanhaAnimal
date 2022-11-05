@@ -1,0 +1,231 @@
+.patronizeContainer {
+  text-align: center;
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "arrowLeft patronize arrowRight"
+    "arrowLeft . arrowRight"
+    ". seeAll .";
+  align-items: stretch;
+
+  row-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 7rem;
+
+  > .title {
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+
+    h1 {
+      font-weight: 700;
+      font-size: 4vh;
+      margin-bottom: 5rem;
+    }
+  }
+  button {
+    margin-bottom: 1rem;
+  }
+
+  .arrow {
+    cursor: pointer;
+    align-self: center;
+
+    > img {
+      width: 50px;
+    }
+
+    &#arrowLeft {
+      grid-area: arrowLeft;
+      margin-left: 10px;
+    }
+    &#arrowRight {
+      grid-area: arrowRight;
+      margin-right: 10px;
+    }
+  }
+  .patronizeContent {
+    grid-area: patronize;
+    border-radius: 10px;
+    display: flex;
+    // margin-right: 2rem;
+    cursor: pointer;
+
+    > .patronize {
+      margin-right: 1rem;
+      padding: 0 1rem;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      button {
+        margin-bottom: 1rem;
+      }
+      figure {
+        > img {
+          object-fit: cover;
+          clip-path: url(#patronize);
+          -webkit-clip-path: url(#patronize);
+          width: 359.31px;
+          height: 283.38px;
+          margin-bottom: 2rem;
+          position: relative;
+          background-color: var(--green-500);
+        }
+      }
+
+      > .patronizeInfo {
+        color: var(--gray-500);
+
+        h3 {
+          font-size: x-large;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: medium;
+          font-weight: 500;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .seeAll {
+    grid-area: seeAll;
+    padding: 2rem 0;
+    text-align: center;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    > a {
+      cursor: pointer;
+      text-decoration: underline;
+      color: var(--green-500);
+      transition: filter 0.4s ease;
+      > img {
+        position: relative;
+        top: 16px;
+        left: 10px;
+      }
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+}
+
+.svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1399px) {
+  .patronizeContainer {
+    .patronizeContent {
+      .patronize {
+        figure {
+          img {
+            object-fit: cover;
+            width: 23vw;
+            height: 23vh;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .patronizeContainer {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 150px;
+
+    > .title {
+      h1 {
+        font-size: 4vh;
+      }
+    }
+
+    .patronizeContent {
+      position: relative;
+
+      display: block;
+      .patronize {
+        width: 100%;
+        position: absolute;
+        opacity: 0;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+  .patronizeContainer {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
+    row-gap: 120px;
+
+    > .title {
+      h1 {
+        font-size: 4vh;
+      }
+    }
+
+    .patronizeContent {
+      position: relative;
+      display: block;
+      .patronize {
+        width: 100%;
+        position: absolute;
+      }
+    }
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 500px) {
+  .patronizeContainer {
+    .patronizeContent {
+      .patronize {
+        figure {
+          img {
+            object-fit: cover;
+            height: 163px;
+            max-height: 163px;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 410px) {
+  .patronizeContainer {
+    grid-template-rows: repeat(4, 1fr);
+    row-gap: 170px;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    .patronizeContent {
+      .patronize {
+        figure {
+          img {
+            object-fit: cover;
+            max-width: 148px;
+            height: 148px;
+            max-height: 148px;
+          }
+        }
+      }
+    }
+  }
+}

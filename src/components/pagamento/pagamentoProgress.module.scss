@@ -1,0 +1,51 @@
+.header {
+  h1 {
+    font-size: 40px;
+  }
+
+  h4{
+    font-size: x-large;
+    font-weight: normal;
+  }
+}
+
+.unActiveHeader{
+  display: none;
+}
+
+@media screen and  (max-width: 600px) {
+  .header {
+    h1 {
+      font-size: 25px;
+    }
+    h4{
+      font-size:large;
+    }
+  }
+}
+
+.progressbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 700px;
+    width: 90%;    
+    height: 10px;
+    background-color: #C4C4C4;
+    margin-bottom: 50px;
+    border-radius: 10px;
+  }
+  
+  .progressbar div {
+    width: 33.3%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #99E7B7;
+  }
+
+
+  .unActiveProgressbar{
+    display: none;
+  }

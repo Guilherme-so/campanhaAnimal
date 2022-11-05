@@ -1,0 +1,515 @@
+.mainContent {
+	margin-top: 100px;
+	padding: 0 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.tabs {
+	margin-top: 30px;
+	padding-left: 260px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.imageAndDetails {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.activeImage {
+	width: 500px;
+	height: 395px;
+	border: 10px solid #ff9d71;
+	border-radius: 10px;
+}
+
+.Image {
+	display: flex;
+	flex-direction: row;
+}
+
+.allImages {
+	display: flex;
+	flex-direction: column;
+	img {
+		margin: 0px 10px;
+		margin-bottom: 8px;
+		border: 4px solid #ff9d71;
+		border-radius: 5px;
+	}
+
+	button {
+		border: none;
+		background: transparent;
+	}
+}
+
+.details {
+	margin-left: 30px;
+	h1 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 51px;
+
+		color: #ff9d71;
+	}
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cardUserInfo {
+	display: flex;
+	flex-direction: row;
+	img {
+		border-radius: 50%;
+		border: 3px solid #ff9d71;
+	}
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+
+		color: #595959;
+		margin-left: 10px;
+	}
+}
+
+.address {
+	margin-left: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+	span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		text-align: center;
+
+		color: #595959;
+		margin-left: 10px;
+	}
+}
+
+.description {
+	span {
+		text-align: left;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color: #595959;
+	}
+	max-width: 600px;
+	margin-top: 20px;
+}
+
+.moreInformation {
+	margin-top: 10px;
+}
+
+.adoptionButton {
+	width: 238px;
+	height: 40px;
+	border: none;
+	background-color: #99e7b7;
+	color: #fff;
+	border-radius: 51px;
+	margin-top: 20px;
+}
+
+.cancelButton {
+	border: 1px solid #ff9d71;
+	width: 238px;
+	color: #ff9d71;
+	height: 40px;
+	background: transparent;
+	border-radius: 51px;
+	margin-top: 20px;
+}
+
+.modalButtons {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.modalContent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.moreInformation h3,
+.moreInformation span {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #595959;
+}
+
+.moreInformation h3 {
+	margin-right: 10px;
+}
+
+.infoData {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+// slider
+
+.campaignsContainer {
+	margin-top: 40px;
+	text-align: center;
+	display: grid;
+	grid-template-areas:
+		'title title title'
+		'arrowLeft campaigns arrowRight'
+		'arrowLeft . arrowRight'
+		'. seeAll .';
+	align-items: center;
+	align-items: stretch;
+
+	row-gap: 1rem;
+	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 7rem;
+
+	> .title {
+		grid-area: title;
+		justify-self: center;
+
+		h1 {
+			font-weight: 700;
+			font-size: 4vh;
+			margin-bottom: 5rem;
+		}
+	}
+	.arrow {
+		cursor: pointer;
+		align-self: center;
+
+		> img {
+			width: 50px;
+		}
+
+		&#arrowLeft {
+			grid-area: arrowLeft;
+		}
+		&#arrowRight {
+			grid-area: arrowRight;
+		}
+	}
+	.campaignsContent {
+		grid-area: campaigns;
+		border-radius: 10px;
+		display: flex;
+		margin-right: 2rem;
+
+		> .campaing {
+			width: 20rem;
+			margin-right: 2rem;
+			box-shadow: 4px 4px 6px 0px #59595940;
+			-webkit-box-shadow: 4px 4px 6px 0px #59595940;
+			overflow: hidden;
+			transition: transform 0.3s ease;
+			border-radius: 10px;
+
+			&:hover {
+				transform: scale(1.2);
+			}
+
+			button {
+				margin-bottom: 1rem;
+			}
+			> figure img {
+				object-fit: cover;
+
+				max-width: 106%;
+				height: 250px;
+				max-height: 250px;
+				border-radius: 10px 10px 0 0;
+				margin-bottom: 2rem;
+			}
+
+			> .campaingInfo {
+				color: var(--gray-500);
+				padding: 0 1rem;
+
+				h3 {
+					font-size: large;
+					margin-bottom: 1rem;
+				}
+
+				p {
+					font-size: small;
+					font-weight: 500;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+
+	.seeAll {
+		grid-area: seeAll;
+		padding: 2rem 0;
+		text-align: center;
+		place-self: center;
+		margin-bottom: 3rem;
+		> a {
+			> img {
+				position: relative;
+				top: 16px;
+				left: 10px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1090px) {
+	.campaignsContainer {
+		.campaignsContent {
+			margin-right: 5px;
+
+			.campaing {
+				margin-right: 5px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.campaignsContainer {
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-columns: 1fr 2fr 1fr;
+		row-gap: 150px;
+
+		> .title {
+			h1 {
+				font-size: 4vh;
+			}
+		}
+
+		.campaignsContent {
+			position: relative;
+
+			display: block;
+			.campaing {
+				width: 115%;
+				position: absolute;
+				> figure img {
+					max-width: 109%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1020px) {
+	.campaignsContainer {
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-columns: 1fr 2fr 1fr;
+		row-gap: 120px;
+
+		> .title {
+			h1 {
+				font-size: 4vh;
+			}
+		}
+
+		.campaignsContent {
+			position: relative;
+			display: block;
+			.campaing {
+				width: 100%;
+				position: absolute;
+				opacity: 0;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 0px) and (max-width: 410px) {
+	.campaignsContainer {
+		grid-template-rows: repeat(4, 1fr);
+		row-gap: 170px;
+		grid-template-columns: 1fr 3fr 1fr;
+
+		.campaing {
+			opacity: 0;
+		}
+	}
+}
+
+.card {
+	max-width: 310px;
+	position: relative;
+	height: 518px;
+	border-radius: 20px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	padding-bottom: 20px;
+	margin: 10px 10px;
+}
+
+.cardAnimalInfo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	img {
+		border-radius: 50%;
+		border: 3px solid #ff9d71;
+	}
+	span {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		top: 15px;
+		left: 52px;
+		width: 140px;
+		background: #ff9d71;
+		border-radius: 10px;
+		padding: 3px;
+		color: #ffffff;
+	}
+}
+
+.cardContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	h1 {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 30px;
+		text-align: center;
+
+		color: #ff9d71;
+	}
+
+	span {
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		text-align: center;
+
+		color: #595959;
+	}
+
+	button {
+		width: 195px;
+		height: 36px;
+		background: #99e7b7;
+		border-radius: 34px;
+		border: none;
+		color: #ffffff;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 1206px) {
+	.activeImage {
+		max-width: 416px;
+		max-height: 401px;
+	}
+
+	.Image {
+		flex-direction: column-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.activeImageContainer {
+		margin: 20px;
+		width: 336px;
+	}
+
+	.activeImage {
+		max-width: 367px;
+	}
+
+	.allImages {
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.mainContent {
+		padding: 0;
+		margin-top: 20px;
+	}
+	.details {
+		margin: 0 30px;
+	}
+
+	.imageAndDetails {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.allImages {
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin: 20px 0;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.activeImageContainer {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.tabs {
+		margin-top: 9px;
+		padding-left: 10px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}

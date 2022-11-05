@@ -1,0 +1,198 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 100%;
+  height: 127px;
+  background: var(--white200);
+  box-shadow: 0px 4px 10px rgba(19, 46, 80, 0.18);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.nameLogo {
+  width: 79px;
+  height: 56px;
+  margin-left: 135px;
+  display: flex;
+  align-items: center;
+  span {
+    font-weight: 800;
+    font-family: 'MuseoModerno';
+    font-style: normal;
+    font-size: 40px;
+    line-height: 56px;
+    color: var(--primary);
+    cursor: pointer;
+  }
+}
+
+.headerBtn {
+  background: var(--secondary);
+  border-radius: 84px;
+  border: transparent;
+  box-shadow: 2px 3px 5px rgba(185, 185, 184, 0.45);
+  color: var(--white200);
+  font-family: 'Epilogue';
+  font-size: 16px;
+  font-weight: 500;
+  height: 50px;
+  margin-right: 135px;
+  outline: none;
+  width: 168px;
+}
+
+.headerLinks {
+  font-family: 'Epilogue';
+  font-size: 18px;
+  line-height: 18.45px;
+  color: var(--black);
+  span {
+    margin-right: 32px;
+  }
+}
+
+.logo {
+  display: none;
+}
+
+// .btnmobile {
+//   display: none;
+// }
+
+.linkMenu{
+  display: none
+}
+
+// .closeModal {
+//   display: none;
+// }
+
+@media screen and (max-width: 812px) {
+  .headerLinks {
+    display: none;
+
+  }
+  // .navactive .headerLinks {
+  //   height: 100vh;
+  //   visibility: visible;
+  //   overflow-y: auto;
+  //   width: 50%;
+  //   top: 120px;
+  // }
+  //
+
+  // .logo {
+  //   width: 30%;
+  //   height: 30%;
+  //   display: flex;
+  //   position: absolute;
+  //   left: 35%;
+  //   top: -100px ;
+  // }
+
+  // .btnmobile {
+  //   display: flex;
+  //   padding: 0.5rem 1rem;
+  //   font-size: 1rem;
+  //   border: none;
+  //   background: none;
+  //   cursor: pointer;
+  //   gap: 0.5rem;
+  //   position: relative;
+  //   left: -235px;
+  // }
+
+  .linkMenu {
+    display: block;
+    padding-left: 50px;
+   }
+
+  // .hamburger {
+  //   border-top: 2px solid;
+  //   width: 20px;
+  // }
+  // .hamburger::after,
+  // .hamburger::before {
+  //   content: '';
+  //   display: block;
+  //   width: 20px;
+  //   height: 2px;
+  //   background: var(--primary);
+  //   margin-top: 5px;
+  //   transition: 0.3s;
+  //   position: relative;
+  // }
+
+  // // .navactive .hamburger {
+  //   border-top-color: transparent;
+  // }
+
+  // .navactive .hamburger::before {
+  //   transform: rotate(135deg);
+  // }
+
+  // .navactive .hamburger::after {
+  //   transform: rotate(-135deg);
+  //   top: -7px;
+  // }
+
+  // .container {
+  //   display: flex;
+  //   // align-items: center;
+  //   width: 100%;
+  //   // box-shadow: 0px 4px 10px rgba(19, 46, 80, 0.18);
+  //   // position: fixed;
+  //   top: 0;
+  //   left: 0;
+  // }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background: var(--white200);
+    box-shadow: 0px 4px 10px rgba(19, 46, 80, 0.18);
+    position: fixed;
+    // top: 0;
+    // left: 0;
+    // z-index: 2;
+  }
+  .nameLogo {
+    height: 32px;
+    display: flex;
+    margin-left: 0px;
+    align-items: center;
+    position: relative;
+    left: 20%;
+    span {
+      font-weight: 800;
+      font-family: 'MuseoModerno';
+      font-style: normal;
+      font-size: 26px;
+      line-height: 41px;
+      color: var(--primary);
+      cursor: pointer;
+    }
+  }
+  .headerBtn {
+    background: var(--secondary);
+    border-radius: 84px;
+    border: transparent;
+    box-shadow: 2px 3px 5px rgba(185, 185, 184, 0.45);
+    color: var(--white200);
+    font-family: 'Epilogue';
+    font-size: 10px;
+    font-weight: 500;
+    height: 24px;
+    // margin-right: 15px;
+    outline: none;
+    width: 90px;
+    position: relative;
+    left: 50%;
+  }
+}

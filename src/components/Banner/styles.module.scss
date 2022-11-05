@@ -1,0 +1,74 @@
+.bannerContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--background);
+  background-image: url("/assets/images/dog-big.png"),
+    url("/assets/images/group-paw.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 70%, contain;
+  height: 80vh;
+  padding: 0 10rem;
+
+  z-index: -1;
+  .bannerContent {
+    max-width: 45vw;
+    color: var(--gray-500);
+
+    > h1 {
+      font-size: 3rem;
+      line-height: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+
+    > p {
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .bannerFooter {
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 943px) {
+  .bannerContainer {
+    padding: 0 2rem;
+    background-position: 30vw, right;
+
+    .bannerContent {
+      max-width: 70vw;
+
+      > h1 {
+        font-size: 4vh;
+        line-height: 4.7vh;
+      }
+
+      > p {
+        font-size: 2.5vh;
+      }
+
+      .bannerFooter {
+        button {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bannerContainer {
+    .bannerContent {
+      font-size: 1vh;
+
+      .bannerFooter {
+        display: block;
+      }
+    }
+  }
+}

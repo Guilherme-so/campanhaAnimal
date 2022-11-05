@@ -1,0 +1,39 @@
+.progressbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+    max-width: 700px;
+    width: 90%;    
+    height: 10px;
+    background-color: #C4C4C4;
+    margin-bottom: 50px;
+    border-radius: 10px;
+  }
+  
+  .progressbar div {
+    width: 33.3%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #99E7B7;
+  }
+
+  .title{
+    font-size: 40px;
+  }
+
+  .subtitle{
+    margin-top: 1rem;
+    font-size: x-large;
+    font-weight: 500;
+    margin: 0 10px;
+    color: var(--gray-500);
+  }
+
+  @media only screen and (max-width: 320px){
+    .title{
+      font-size: 30px;
+    }
+   
+  }
