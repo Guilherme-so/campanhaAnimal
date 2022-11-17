@@ -1,11 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { SEO } from "../../SEO";
-import { api } from "../../services/axios";
-// import { Modal } from "../../components/Modal";
+import { ModalAdoption } from "../../components/Modal/ModalAdoptionDetail";
 import { AdoptionSlider } from "../../components/AdoptionSlider";
 
 import style from "../style/adoptionDetails.module.scss";
-import { ModalAdoption } from "../../components/Modal/ModalAdoptionDetail";
 
 interface ICampaignsResponse {
   title: string;
@@ -14,36 +12,18 @@ interface ICampaignsResponse {
 }
 
 export default function AdoptionDetails(data) {
-	const [animals, setAnimals] = useState([]);
-	const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const [isModalOpen, setIsModalOpen] = useState(false) 
+  const [animals, setAnimals] = useState([]);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const limitPerPage = 3;
-  const [campaigns, setCampaigns] = useState<ICampaignsResponse[]>([]);
-  const [windowSize, setWindowSize] = useState(0);
-  const containerRef = useRef<HTMLDivElement>();
-
-
-  function modalOpen(){
-    setIsModalOpen(true)
+  function modalOpen() {
+    setIsModalOpen(true);
   }
 
-  function closeModal(){
-    setIsModalOpen(false)
+  function closeModal() {
+    setIsModalOpen(false);
   }
 
-  useEffect(() => {
-    api.get("http://localhost:3333/animals?_limit=3").then((reseponse) => {
-      setAnimals(reseponse.data);
-    });
-  }, []);
-
-  useEffect(() => {
-    setWindowSize(window.innerWidth);
-    api.get("/dogs").then((response) => {
-      setCampaigns(response.data);
-    });
-  }, []);
 
   return (
     <>
@@ -102,11 +82,8 @@ export default function AdoptionDetails(data) {
         <div>adote o {data.data.name}</div>
       </div>
 
-	
       <section className={style.mainContent}>
         <div className={style.imageAndDetails}>
-
-
           <div className={style.Image}>
             <div className={style.allImages}>
               {data.data.images.map((image, index) => {
@@ -141,9 +118,8 @@ export default function AdoptionDetails(data) {
               />
             </div>
           </div>
-          
-		  
-		  <div className={style.details}>
+
+          <div className={style.details}>
             <h1>Adote o Mureta</h1>
 
             <div className={style.info}>
@@ -194,20 +170,19 @@ export default function AdoptionDetails(data) {
             <button
               type="button"
               className={style.adoptionButton}
-              onClick={() =>modalOpen()}
+              onClick={() => modalOpen()}
             >
               Quero adotar
             </button>
           </div>
         </div>
       </section>
-      
+
       <AdoptionSlider animals={animals} />
 
       {isModalOpen && (
-      <ModalAdoption isModalOpen={isModalOpen} closeModal={closeModal} />
+        <ModalAdoption isModalOpen={isModalOpen} closeModal={closeModal} />
       )}
-      
 
       {/* <Modal title={`${showTerms === true ? "Termos e condições" : ""} `}>
         <div className={style.modalContent}>

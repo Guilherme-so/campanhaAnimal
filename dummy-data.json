@@ -1,0 +1,215 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Evento de adoção",
+      "schedule_date": "28/12/2021",
+      "thumbnail": {
+        "url": "/assets/images/event-1.png",
+        "alt": "Imagem de teste"
+      },
+      "image": {
+        "url": "/assets/images/img-event-detail.png",
+        "alt": "Imagem de teste"
+      },
+
+      "event_hour": "14hrs",
+      "adress": "Av. Jaceguava, 1699"
+    },
+    {
+      "id": 2,
+      "name": "1° Feira de adoção",
+      "schedule_date": "31/12/2021",
+      "thumbnail": {
+        "url": "/assets/images/event-2.png",
+        "alt": "Imagem de teste"
+      },
+      "image": {
+        "url": "/assets/images/img-event-detail.png",
+        "alt": "Imagem de teste"
+      },
+      "event_hour": "18hrs",
+      "adress": "Fazenda Valle das Fadas"
+    },
+    {
+      "id": 3,
+      "name": "1° Feira vegana",
+      "schedule_date": "31/12/2021",
+      "thumbnail": {
+        "url": "/assets/images/event-2.png",
+        "alt": "Imagem de teste"
+      },
+      "image": {
+        "url": "/assets/images/img-event-detail.png",
+        "alt": "Imagem de teste"
+      },
+      "event_hour": "18hrs",
+      "adress": "Santuário das fadas"
+    },
+    {
+      "id": 4,
+      "name": "Evento de adoção",
+      "schedule_date": "28/12/2021",
+      "thumbnail": {
+        "url": "/assets/images/event-1.png",
+        "alt": "Imagem de teste"
+      },
+      "image": {
+        "url": "/assets/images/img-event-detail.png",
+        "alt": "Imagem de teste"
+      },
+      "event_hour": "18hrs",
+      "adress": "Av. Jaceguava, 1699"
+    },
+    {
+      "id": 5,
+      "name": "Evento de adoção",
+      "schedule_date": "28/12/2021",
+      "thumbnail": {
+        "url": "/assets/images/event-1.png",
+        "alt": "Imagem de teste"
+      },
+      "image": {
+        "url": "/assets/images/img-event-detail.png",
+        "alt": "Imagem de teste"
+      },
+      "event_hour": "18hrs",
+      "adress": "Av. Jaceguava, 1699"
+    },
+    {
+      "id": 6,
+      "name": "Evento de adoção",
+      "schedule_date": "28/12/2021",
+      "thumbnail": {
+        "url": "/assets/images/event-1.png",
+        "alt": "Imagem de teste"
+      },
+      "image": {
+        "url": "/assets/images/img-event-detail.png",
+        "alt": "Imagem de teste"
+      },
+      "event_hour": "18hrs",
+      "adress": "Av. Jaceguava, 1699"
+    },
+    {
+      "id": 7,
+      "name": "Evento de adoção",
+      "schedule_date": "28/12/2021",
+      "thumbnail": {
+        "url": "/assets/images/event-1.png",
+        "alt": "Imagem de teste"
+      },
+      "image": {
+        "url": "/assets/images/img-event-detail.png",
+        "alt": "Imagem de teste"
+      },
+      "event_hour": "18hrs",
+      "adress": "Av. Jaceguava, 1699"
+    },
+    {
+      "id": 8,
+      "name": "Evento de adoção",
+      "schedule_date": "28/12/2021",
+      "thumbnail": {
+        "url": "/assets/images/event-1.png",
+        "alt": "Imagem de teste"
+      },
+      "image": {
+        "url": "/assets/images/img-event-detail.png",
+        "alt": "Imagem de teste"
+      },
+      "event_hour": "18hrs",
+      "adress": "Av. Jaceguava, 1699"
+    }
+  ],
+
+  "animals": [
+    {
+      "id": 1,
+      "name": "Mureta",
+      "type": "dog",
+      "disabilities": "cão surdo",
+      "sex": "male",
+      "size": "m",
+      "age": "7",
+      "isHereSince": "Janeiro/2019",
+      "images": [
+        {
+          "src": "adote_mureta2.png"
+        },
+        {
+          "src": "adote_mureta3.png"
+        },
+        {
+          "src": "adote_mureta4.png"
+        },
+        {
+          "src": "adote_mureta5.png"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jurema",
+      "type": "horse",
+      "sex": "female",
+      "size": "g",
+      "age": "10",
+      "isHereSince": "Julho/2019"
+    },
+    {
+      "id": 3,
+      "name": "Puma",
+      "type": "cat",
+      "sex": "male",
+      "size": "p",
+      "age": "11",
+      "isHereSince": "Maio/2018"
+    },
+    {
+      "id": 4,
+      "name": "Jafar",
+      "type": "goat",
+      "sex": "male",
+      "size": "g",
+      "age": "6",
+      "isHereSince": "Novembro/2019"
+    },
+    {
+      "id": 5,
+      "name": "Cascavel",
+      "type": "horse",
+      "sex": "male",
+      "size": "g",
+      "age": "16",
+      "isHereSince": "Agosto/2017"
+    },
+    {
+      "id": 6,
+      "name": "Chuchu",
+      "type": "cat",
+      "sex": "female",
+      "size": "p",
+      "age": "2",
+      "isHereSince": "Agosto/2021"
+    },
+    {
+      "id": 7,
+      "name": "Neném",
+      "type": "dog",
+      "sex": "male",
+      "size": "m",
+      "age": "1",
+      "isHereSince": "Outubro/2021"
+    },
+    {
+      "id": 8,
+      "name": "Aladin",
+      "type": "goat",
+      "sex": "male",
+      "size": "g",
+      "age": "6",
+      "isHereSince": "Novembro/2019"
+    }
+  ]
+}
