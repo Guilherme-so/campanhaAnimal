@@ -1,14 +1,12 @@
-import { yupResolver } from '@hookform/resolvers/yup';
+import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 
 import styleLogin from '../../pages/style/login.module.scss';
 import styleRegister from '../../pages/style/register.module.scss';
 import { yup } from '../../utils/schema';
 import { Button } from '../Button';
-import { IAddressProps } from '../../interfaces/RegisterContextProps';
 
 import { useRegisterSteps } from '../../hooks/useRegisterSteps';
-import { useEffect, useState } from 'react';
 
 const schema = yup
 	.object({

@@ -1,7 +1,4 @@
-import { yupResolver } from '@hookform/resolvers/yup';
-import { useContext } from 'react';
 import { useForm } from 'react-hook-form';
-import Regex from '../../utils/regex';
 
 import styleLogin from '../../pages/style/login.module.scss';
 import styleRegister from '../../pages/style/register.module.scss';

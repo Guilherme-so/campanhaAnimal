@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { CaretCircleLeft } from "phosphor-react";
 import React, { FormEvent, useRef, useState, useContext } from "react";
 import { apadrinheAnimais } from "../../dummyData";
-import { Modal } from "../../components/Modal";
+// import { Modal } from "../../components/Modal";
 import { useModal } from "../../hooks/useModal";
 import { apadrinhePrice } from "../../utils/apadrinhePrice";
 import { ApadrinheContext } from "../../context/ApadrinheContext";
@@ -137,7 +137,7 @@ function ApadrinheDetail() {
             </button>
           </div>
 
-          <Modal title="QUAIS VALORES VOCÊ DESEJA DOAR?">
+          {/* <Modal title="QUAIS VALORES VOCÊ DESEJA DOAR?">
             <div className={style.modalContent}>
 
               <div className={style.ajudeContainer}>
@@ -177,7 +177,7 @@ function ApadrinheDetail() {
               </div>
 
             </div>
-          </Modal>
+          </Modal> */}
 
         </div>
       </div>

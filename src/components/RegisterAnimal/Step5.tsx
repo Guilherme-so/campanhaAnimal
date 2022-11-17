@@ -1,13 +1,10 @@
-import { yupResolver } from '@hookform/resolvers/yup';
 import { ChangeEvent, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useModal } from '../../hooks/useModal';
 import { useRegisterSteps } from '../../hooks/useRegisterSteps';
-import styleRegister from '../../pages/style/register.module.scss';
 import styleLogin from '../../pages/style/login.module.scss';
 import { yup } from '../../utils/schema';
 import { Button } from '../Button';
-import { Modal } from '../Modal';
 import { PlusIcon } from '../PlusIcon';
 import { ImageIcon } from '../ImageIcon';
 interface IBlurProps {
