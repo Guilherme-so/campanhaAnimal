@@ -15,6 +15,7 @@ export function SEO({
   shouldExcludeTitleSuffix = false,
   shouldIndexPage = true,
 }: SEOProps) {
+
   const pageTitle = `${title} ${
     !shouldExcludeTitleSuffix ? "| Campanha Animal" : ""
   }`;
