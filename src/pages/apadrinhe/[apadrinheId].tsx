@@ -154,7 +154,6 @@ function ApadrinheDetail() {
 
               </div>
 
-
               <div className={style.containerButtonsPrice}>
                 {apadrinhePrice.map((price) => {
                   return (
