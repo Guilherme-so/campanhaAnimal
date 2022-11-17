@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import { Button } from "../components/Button";
-import { Hero } from "../components/Hero";
 import { SEO } from "../SEO";
 import style from "./style/about.module.scss";
 
@@ -32,13 +31,12 @@ export default function About() {
         <div className={style.aboutContainer}>
           <div className={style.aboutContent}>
             <h3>
-              Uma Iniciativa da ONG santuário <br />
-			  das fadas para protetores da <br />
-			   causa animal.
+              Uma Iniciativa da ONG para <br /> 
+              protetores da causa animal.
             </h3>
 
             <p>
-              Desenvolvida pela equipe da ONG santuário das fadas, A Plataforma
+              A Plataforma
               campanha animal conta com o empenho de um time voluntários
               dedicados á causa animal que oferecem seu tempo e talento a essa
               iniciativa para ajudar animais de todas as espécies pelo Brasil.

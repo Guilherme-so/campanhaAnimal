@@ -5,7 +5,7 @@ import { ApadrinheProvider } from "../context/ApadrinheContext";
 
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import FooterGetHash from "../components/FooterGetHash";
+import FooterCopy from "../components/FooterDevBy";
 
 
 import "../../styles/animations.scss";
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
             <Header />
             <Component {...pageProps} />
             <Footer />
-            <FooterGetHash />
+            <FooterCopy />
             </NewCampanhaProvider>
           </ModalProvider>
         </ApadrinheProvider>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import style from "./styles.module.scss";
 
 export function Footer() {
@@ -35,9 +34,9 @@ export function Footer() {
 			trabalho.</p>
 
             <a className={style.insta}
-              href="https://instagram.com/santuario_das_fadas"
-              target="_blank"
-              rel="noopener"
+              href="#"
+              // target="_blank"
+              // rel="noopener"
             >
               <img
                 src="/assets/images/instagramBig.svg"
@@ -60,9 +59,9 @@ export function Footer() {
 
         <div className={style.contact} >
           <h2>Contato</h2>
-          <p>+55 (62 )99478-5547 </p>
-          <p>+55 (62 )99478-5547 </p>
-          <p className={style.email}>campanhaanimal@gmail.com</p>
+          <p>+55 (38 )99999-9999 </p>
+          <p>+55 (38 )99999-9999 </p>
+          <p className={style.email}>emailExamplo@gmail.com</p>
         </div>
 
       </div>
