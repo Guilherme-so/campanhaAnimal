@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import { MdOutlineClose } from "react-icons/md";
-import { Modal } from "../../components/Modal";
+import { useState } from "react";
+// import { MdOutlineClose } from "react-icons/md";
 import { MultiRangeSlider } from "../../components/MultiRange";
 import { apadrinheAnimais } from "../../dummyData";
 import { SEO } from "../../SEO";
